@@ -1,4 +1,5 @@
 #! /bin/bash
+# not working for now =)
 
 
 sudo pamac install 
