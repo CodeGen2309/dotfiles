@@ -4,13 +4,24 @@
 
 sudo pamac install 
 rofi-wayland
+rofi-theme-selector
+
 wayland
 hyperlock
+hyperidle
 waybar
-rofi-theme-selector
+mako
+
+nodejs
+npm
+npx
+
+kitty
+ranger
+micro
+
+web-apps
 code-oss
 obsidian
 vivaldi
-ranger
-alacritty
 chromium
