@@ -1,6 +1,6 @@
 #! /bin/bash
 # not working for now =)
-# parapapapam teeeested lnine
+# will be update later
 
 
 sudo pamac install 
