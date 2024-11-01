@@ -1,4 +1,5 @@
 #! /bin/bash
+# just test
 
 # SINGLE APPS
 packgs="
