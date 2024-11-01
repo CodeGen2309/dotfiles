@@ -36,15 +36,15 @@ atool
 "
 
 
+pamac install $packgs
 
 
-sudo pamac install $packgs
-
-
-fltpak="
+flatlist="
 org.onlyoffice.desktopeditors
 com.anydesk.Anydesk
 com.getpostman.Postman
 com.google.Chrome
 ru.yandex.Browser
 "
+
+flatpak install $flatlist
