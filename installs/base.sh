@@ -34,6 +34,7 @@ kitty
 ranger
 micro
 atool
+btop
 "
 
 
