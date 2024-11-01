@@ -1,6 +1,4 @@
 #! /bin/bash
-# not working for now =)
-# will be update later
 
 
 packgs="
