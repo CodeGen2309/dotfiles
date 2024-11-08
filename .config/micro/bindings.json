@@ -2,4 +2,6 @@
     "Alt-/": "lua:comment.comment",
     "CtrlUnderscore":"lua:comment.comment",
     "CtrlP": "command:tree",
+    "ShiftRight": "SelectWordRight",
+    "ShiftLeft": "SelectWordLeft"
 }
