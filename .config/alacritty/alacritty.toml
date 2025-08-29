@@ -1,0 +1,16 @@
+[general]
+import = [
+	# "/home/jrj/.config/alacritty/themes/ayu_light.toml"
+	"/home/jrj/.config/alacritty/themes/catppuccin_latte.toml"
+	# "/home/jrj/.config/alacritty/themes/everforest_light.toml"
+]
+
+[window]
+padding.x = 10
+padding.y = 10
+
+[terminal]
+
+
+[terminal.shell]
+program = "/bin/zsh"

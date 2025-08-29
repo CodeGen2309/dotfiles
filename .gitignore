@@ -1,0 +1,13 @@
+/*
+/.config/*
+
+
+!/.config/
+!.config/nvim
+!/.config/alacritty/
+!/.config/micro
+!/.config/ranger
+
+!/.local/share/rofi/themes
+
+!.gitignore

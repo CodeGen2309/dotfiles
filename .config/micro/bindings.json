@@ -1,0 +1,8 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "CtrlUnderscore":"lua:comment.comment",
+    "CtrlP": "command:tree",
+    // "CtrlW": "command:quit",
+    "ShiftRight": "SelectWordRight",
+    "ShiftLeft": "SelectWordLeft",
+}
