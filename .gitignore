@@ -4,9 +4,10 @@
 
 !/.config/
 !.config/nvim
-!/.config/alacritty/
 !/.config/micro
 !/.config/ranger
+!/.config/hypr
+!/.config/alacritty
 
 !/.local/share/rofi/themes
 
