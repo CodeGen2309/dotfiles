@@ -1,0 +1,88 @@
+// This config is in the KDL format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://niri-wm.github.io/niri/Configuration:-Introduction
+
+
+spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
+spawn-sh-at-startup "waypaper --restore"
+spawn-at-startup "waybar"
+
+
+workspace "special" { open-on-output "HDMI-A-1"; }
+
+
+hotkey-overlay {
+	// Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
+	// skip-at-startup
+}
+
+
+// Uncomment this line to ask the clients to omit their client-side decorations if possible.
+// If the client will specifically ask for CSD, the request will be honored.
+// Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
+// This option will also fix border/focus ring drawing behind some semitransparent windows.
+// After enabling or disabling this, you need to restart the apps for this to take effect.
+// prefer-no-csd
+
+// You can change the path where screenshots are saved.
+// A ~ at the front will be expanded to the home directory.
+// The path is formatted with strftime(3) to give you the screenshot date and time.
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// You can also set this to null to disable saving screenshots to disk.
+// screenshot-path null
+
+// Animation settings.
+// The wiki explains how to configure individual animations:
+// https://niri-wm.github.io/niri/Configuration:-Animations
+
+
+animations {
+    // Uncomment to turn off all animations.
+    // off
+
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+    slowdown 2
+}
+
+
+// Window rules let you adjust behavior for individual windows.
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Window-Rules
+
+// Work around WezTerm's initial configure bug
+// by setting an empty default-column-width.
+
+
+
+
+layer-rule {
+	match namespace="wallpaper"
+	place-within-backdrop true
+
+	// Properties that apply continuously.
+	// block-out-from "screencast"
+	// block-out-from "screen-capture"
+}
+
+
+
+environment {
+  QT_QPA_PLATFORMTHEME "qt6ct"
+	XDG_CURRENT_DESKTOP "gnome"
+	QT_QPA_PLATFORM "wayland"
+	GTK_USE_PORTAL "1"
+}
+
+
+
+
+prefer-no-csd
+
+include "parts/input.kdl"
+include "parts/layout.kdl"
+include "parts/keybinds.kdl"
+include "parts/window-rules.kdl"
+include "parts/keybinds.kdl"
+include "parts/output.kdl"

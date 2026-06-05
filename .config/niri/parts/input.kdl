@@ -1,0 +1,14 @@
+// Input device configuration.
+// Find the full list of options on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Input
+
+input {
+	focus-follows-mouse
+    
+	keyboard {
+		xkb {
+			layout "us,ru"
+			options "grp:alt_space_toggle,compose:ralt,ctrl:nocaps"
+		}
+	}
+}

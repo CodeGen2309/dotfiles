@@ -1,4 +1,5 @@
 {
-    "colorscheme": "simple",
-    "tabsize": 2
+	"clipboard": "external",
+	"colorscheme": "simple",
+	"tabsize": 2
 }

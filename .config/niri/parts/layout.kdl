@@ -1,0 +1,45 @@
+// Settings that influence how windows are positioned and sized.
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Layout
+
+
+layout {
+	gaps 16
+
+	center-focused-column "never"
+	always-center-single-column
+	background-color "transparent"
+  default-column-width { proportion 0.7; }
+
+
+	preset-column-widths {
+		proportion 0.5
+		proportion 0.7
+		// fixed 1920
+	}
+
+	focus-ring {
+		// off
+		width 3
+
+		active-color "#D9E0EE"
+		inactive-color "#505050"
+		// inactive-gradient from="white" to="black" angle=45 relative-to="workspace-view"
+	}
+
+
+	border {
+		off
+
+		width 4
+		active-color "#ffc87f"
+		inactive-color "#505050"
+		urgent-color "#9b0000"
+	}
+
+	// Struts shrink the area occupied by windows, similarly to layer-shell panels.
+	// You can think of them as a kind of outer gaps. They are set in logical pixels.
+	// Left and right struts will cause the next window to the side to always be visible.
+	// Top and bottom struts will simply add outer gaps in addition to the area occupied by
+	// layer-shell panels and regular gaps.	
+}
