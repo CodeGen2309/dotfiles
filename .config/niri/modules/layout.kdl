@@ -16,7 +16,7 @@ layout {
 		proportion 0.5
 		proportion 0.7
 		// fixed 1920
-	}
+    }
 
 	focus-ring {
 		// off
@@ -25,7 +25,7 @@ layout {
 		active-color "#D9E0EE"
 		inactive-color "#505050"
 		// inactive-gradient from="white" to="black" angle=45 relative-to="workspace-view"
-	}
+    }
 
 
 	border {
@@ -35,7 +35,8 @@ layout {
 		active-color "#ffc87f"
 		inactive-color "#505050"
 		urgent-color "#9b0000"
-	}
+    }
+
 
 	// Struts shrink the area occupied by windows, similarly to layer-shell panels.
 	// You can think of them as a kind of outer gaps. They are set in logical pixels.

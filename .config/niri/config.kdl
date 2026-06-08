@@ -12,10 +12,8 @@ spawn-at-startup "waybar"
 workspace "special" { open-on-output "HDMI-A-1"; }
 
 
-hotkey-overlay {
-	// Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-	// skip-at-startup
-}
+hotkey-overlay 
+
 
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -33,37 +31,11 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // You can also set this to null to disable saving screenshots to disk.
 // screenshot-path null
 
-// Animation settings.
-// The wiki explains how to configure individual animations:
-// https://niri-wm.github.io/niri/Configuration:-Animations
-
-
-animations {
-    // Uncomment to turn off all animations.
-    // off
-
-    // Slow down all animations by this factor. Values below 1 speed them up instead.
-    slowdown 2
-}
-
-
-// Window rules let you adjust behavior for individual windows.
-// Find more information on the wiki:
-// https://niri-wm.github.io/niri/Configuration:-Window-Rules
-
-// Work around WezTerm's initial configure bug
-// by setting an empty default-column-width.
-
-
 
 
 layer-rule {
 	match namespace="wallpaper"
 	place-within-backdrop true
-
-	// Properties that apply continuously.
-	// block-out-from "screencast"
-	// block-out-from "screen-capture"
 }
 
 
@@ -76,13 +48,11 @@ environment {
 }
 
 
-
-
 prefer-no-csd
 
-include "parts/input.kdl"
-include "parts/layout.kdl"
-include "parts/keybinds.kdl"
-include "parts/window-rules.kdl"
-include "parts/keybinds.kdl"
-include "parts/output.kdl"
+include "modules/input.kdl"
+include "modules/layout.kdl"
+include "modules/keybinds.kdl"
+include "modules/window-rules.kdl"
+include "modules/output.kdl"
+include "modules/animations.kdl"
