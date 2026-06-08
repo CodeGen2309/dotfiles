@@ -3,7 +3,7 @@
 
 cliPackages=" 
   btop zsh ranger screen git micro 
-  podman python nodejs npm yay 
+  podman python nodejs npm yay fastfetch 
   iwd impala
 "
 
@@ -15,8 +15,12 @@ niriPackages="
 
 
 utils="
-  mako rofi nemo fastfetch
+  mako rofi nemo qt6ct kvantum
+  nwg-look nirimod-git 
 "
+
+
+vscodeGit="code-git"
 
 
 # Oh My Zsh install
