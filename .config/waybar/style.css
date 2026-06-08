@@ -5,11 +5,22 @@
 	padding: 2px 4px;
 }
 
+/* Catppuccin Frappe (dark) */
+/* window#waybar { */
+/* 	background-color: #1E1D2F; */
+/* 	border: 3px solid #D9E0EE; */
+/* 	border-radius: 10px; */
+/* 	color: #ffffff; */
+/* 	transition-property: background-color; */
+/* 	transition-duration: .5s; */
+/* } */
+
+
+/* Catppuccin Latte (light) */
 window#waybar {
-	background-color: #1E1D2F;
-	border: 3px solid #D9E0EE;
+	background-color: #EFF1F5;
 	border-radius: 10px;
-	color: #ffffff;
+	color: #4C4F69;
 	transition-property: background-color;
 	transition-duration: .5s;
 }
