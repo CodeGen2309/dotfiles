@@ -2,7 +2,9 @@
 
 
 cliPackages=" 
-  btop zsh ranger screen git micro podman python nodejs npm yay
+  btop zsh ranger screen git micro 
+  podman python nodejs npm yay 
+  iwd impala
 "
 
 
@@ -15,3 +17,13 @@ niriPackages="
 utils="
   mako rofi nemo fastfetch
 "
+
+
+# Oh My Zsh install
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+# Run IWD and Impala
+# sudo systemctl stop NetworkManager
+# sudo systemctl disable NetworkManager
+# sudo systemctl enable --now iwd
