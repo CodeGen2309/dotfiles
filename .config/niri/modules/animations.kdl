@@ -6,7 +6,7 @@
 
 animations {
     // Uncomment while tuning.
-    slowdown 2.0
+    slowdown 1.8
 
 
     window-open {

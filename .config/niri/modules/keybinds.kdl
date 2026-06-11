@@ -3,11 +3,12 @@ binds {
 
 	// Suggested binds for running programs: terminal, app launcher, screen locker.
 	// Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-	Mod+E hotkey-overlay-title="Ranger"    { spawn-sh "alacritty  --class 'ranger' -e ranger"; }
+	Mod+E hotkey-overlay-title="Ranger"    { spawn-sh "alacritty -e ranger"; }
 	Mod+N hotkey-overlay-title="Nemo"      { spawn "nemo"; }
-	Mod+Space hotkey-overlay-title="Terminal"  { spawn "alacritty"; }
+	
+	Mod+Space hotkey-overlay-title="Terminal"   { spawn "alacritty"; }
 	Mod+Return hotkey-overlay-title="Rofi"      { spawn-sh "./.config/rofi/launchers/type-7/launcher.sh"; }
-	// Mod+Return  hotkey-overlay-title="Rofi"   { spawn-sh "rofi -show drun -show-icons"; }
+	// Mod+Return  hotkey-overlay-title="Rofi"  { spawn-sh "rofi -show drun -show-icons"; }
 
 
 	Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
