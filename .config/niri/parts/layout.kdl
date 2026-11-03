@@ -22,7 +22,7 @@ layout {
 		// off
 		width 3
 
-		active-color "#D9E0EE"
+		active-color "#3B4252"
 		inactive-color "#505050"
 		// inactive-gradient from="white" to="black" angle=45 relative-to="workspace-view"
     }

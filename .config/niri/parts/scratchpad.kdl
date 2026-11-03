@@ -1,0 +1,5 @@
+workspace "special" { open-on-output "eDP-1"; }
+
+binds {
+	Mod+U { spawn-sh "niri msg workspaces | grep \"\\*.*special\" && niri msg action focus-workspace-previous || niri msg action focus-workspace special"; }
+}
